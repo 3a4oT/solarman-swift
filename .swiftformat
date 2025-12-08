@@ -1,0 +1,47 @@
+# SwiftFormat configuration for solarman-swift
+# Reference: https://github.com/nicklockwood/SwiftFormat
+
+# Swift version
+--swiftversion 6.2
+
+# File options
+--exclude .build
+
+# Format options
+--indent 4
+--indentcase false
+--trimwhitespace always
+--voidtype void
+--nospaceoperators ..<, ...
+--ranges nospace
+--wraparguments before-first
+--wrapparameters before-first
+--wrapcollections before-first
+--closingparen balanced
+--funcattributes prev-line
+--typeattributes prev-line
+--varattributes prev-line
+--storedvarattrs prev-line
+--computedvarattrs prev-line
+--complexattributes prev-line
+--typeblanklines remove
+--organizetypes class,actor,struct,enum,protocol,extension
+--marktypes always
+--markextensions always
+--extensionacl on-declarations
+
+# Rules
+--enable blankLineAfterImports
+--enable blankLinesBetweenImports
+--enable blockComments
+--enable docComments
+--enable isEmpty
+--enable markTypes
+--enable organizeDeclarations
+--enable sortImports
+--enable wrapConditionalBodies
+--enable wrapEnumCases
+--enable wrapSwitchCases
+
+--disable wrapMultilineStatementBraces
+--disable acronyms
