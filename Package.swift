@@ -16,7 +16,7 @@ let package = Package(
         .library(name: "SolarmanV5", targets: ["SolarmanV5"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/3a4oT/modbus-swift.git", from: "1.0.1"),
+        .package(url: "https://github.com/3a4oT/modbus-swift.git", from: "1.0.2"),
         .package(url: "https://github.com/apple/swift-nio.git", from: "2.91.0"),
         .package(url: "https://github.com/apple/swift-log.git", from: "1.7.1"),
         .package(url: "https://github.com/apple/swift-metrics.git", from: "2.7.1"),
@@ -35,7 +35,7 @@ let package = Package(
                 .product(name: "Logging", package: "swift-log"),
                 .product(name: "Metrics", package: "swift-metrics"),
                 .product(name: "ServiceLifecycle", package: "swift-service-lifecycle"),
-            ]
+            ],
         ),
 
         // MARK: - Tests
@@ -45,7 +45,7 @@ let package = Package(
             dependencies: [
                 "SolarmanV5",
                 .product(name: "NIOEmbedded", package: "swift-nio"),
-            ]
+            ],
         ),
-    ]
+    ],
 )
